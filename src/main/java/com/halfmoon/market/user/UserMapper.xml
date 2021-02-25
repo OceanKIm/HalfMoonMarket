@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.halfmoon.market.user.UserMapper">
+
+	<insert id="insUser" useGeneratedKeys="true" keyProperty="i_user">
+			INSERT INTO t_user
+			(id_email, user_nm, user_pw, gender, ph, postcode, roadAddr, jibunAddr, detailAddr, extraAddr)
+			VALUES
+			(#{id_email}, #{user_nm}, #{user_pw}, #{gender} ,#{ph}, #{postcode}, #{roadAddr}, #{jibunAddr}, #{detailAddr}, #{extraAddr})
+	</insert>
+	
+	<select id="selUser" resultType="UserDomain">
+		select *
+		from t_user
+		<where>
+			<if test="i_user > 0">
+				i_user = ${i_user}
+				AND isAuth = 1	<!-- 인증 검사 -->
+			</if>
+			<if test="id_email != null and id_email !=''">
+				id_email = #{id_email}
+				AND isAuth = 1	<!-- 인증 검사 -->				
+			</if>
+		</where>		
+	</select>
+	
+	<update id="updAuth">
+		UPDATE t_user
+		SET isAuth = 1
+		WHERE i_user = #{i_user};
+	</update>
+	
+	<update id="updProfileImg">
+	UPDATE t_user
+	SET profile_img = #{profile_img}
+	where i_user = #{i_user};
+	</update>
+	
+	<update id="updUser">
+	UPDATE t_user
+	<choose>
+	<when test="state ==1">
+	SET user_pw = #{user_pw}
+	</when>
+	<when test="state ==2">
+	SET profile_img = #{profile_img}
+	</when>
+	<when test="state ==3">
+	SET postcode = #{postcode},
+	roadAddr =#{roadAddr},
+	jibunAddr = #{jibunAddr},
+	extraAddr = #{extraAddr},
+	detailAddr = #{detailAddr}
+	</when>
+	<when test="state ==4">
+	SET ph= #{ph}
+	</when>
+	</choose>
+	WHERE i_user = #{i_user}
+	</update>
+	
+	
+	
+	
+</mapper>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin: 0;
+    padding: 0 0 60px 0;
+    border-bottom: 1px solid;
+    border-color: #f0ba5e;
+}
+
+#profile-logo{
+	
+}
+
+
+
+#profile-logo a{
+	position: relative;
+}
+#profile-logo a img{
+	width: 280px;
+    margin-top: 50px;
+}
+
+
+#profile{
+	height: 100%;
+	margin: auto;
+    width: 1200px;
+}
+
+#Uprofile input{
+	background: white;
+    border-color: #000000;
+    border: 0.5px solid;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#profile-div{
+	display: flex;
+	height: 86%;
+}
+
+#profile_left{
+	margin-top: 50px;
+    width: 400px;
+    border-left: 1px solid;  
+    border-color: #f0ba5e;                                            
+}
+
+#profile_right{
+	margin-top: 50px;
+    width: 800px;
+    border-right: 1px solid;
+    padding-right: 70px;
+    margin-left: 100px;
+    border-color: #f0ba5e;
+}
+
+#profile-left-div1{
+	height: 35%;
+}
+
+#profile-left-div2{
+	height: 59%;
+	margin-top: 50px;
+}
+
+#profile_right_div1{
+	height: 18%;
+}
+
+#profile_right_div2{
+	height: 82%;
+}
+
+#profile-user-logo{
+	text-align: center;
+}
+
+#user_pw{
+	width: 155px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+#profile-left-div2 div{
+	font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 9px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-color: #f0ba5e;
+}
+
+#profile_right_div2 div{
+	font-size: 15px;
+	margin: 0 0 20px 0;
+}
+
+#postcode{
+	width: 228px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#roadAddress{
+	width: 228px;
+    height: 20px;
+    padding: 3px 0 3px 0;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#jibunAddress{
+	width: 232px;
+    height: 20px;
+    padding: 10px;
+}
+#detailAddress{
+	display: block;
+    width: 465px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#extraAddress{
+	display: none;
+}

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+header {
+	position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    height: 195;
+    border-bottom:2px solid gray;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	text-decoration: none;
+}
+
+#top{
+	display: flex;
+}
+
+.mainlogodiv{
+	background-color: white;
+	margin: 20px 0 20px 0;
+}
+
+.mainlogodiv2 {
+	width: 1000px;
+	margin: auto;
+	display: flex;
+}
+
+.mainlogo a-img {
+}
+
+.mainlogodiv a{
+	margin: 0;
+	text-decoration: none;
+	color: black;
+}
+
+
+.mainlogo {
+	width: 220px;
+}
+
+
+.main-form{
+	display: flex;
+}
+
+.form-select{
+	 margin: 15px 0 0 70px;
+}
+
+.main-form-input{
+	border-radius: 5px;
+    border: solid 1px gray;
+    padding: 0 0.6rem;
+    height: 35px;
+    width: 310px;
+}
+
+.form-select-window{
+	position: absolute;
+    width: 310px;
+    border: 1px solid rgb(217, 217, 217);
+    background: rgb(255, 255, 255);
+    z-index: 100;
+    top: 90px;
+    padding: 0 10px;
+    display: none;
+}
+
+
+.window-div1{
+	display: flex;
+}
+.window-div2{
+	padding: 15px;
+}
+.window-div3{
+	background: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px 0 10px;
+}
+
+.window-a1{
+	border-bottom: 2px solid rgb(217, 217, 217);
+	font-weight: 600;
+	width: 50%;
+    text-align: center;
+    padding: 15px 0 8px 0;
+}
+.window-a2{
+	display: inline-block;
+    font-weight: 600;
+    color: rgb(247, 47, 51);
+    border-bottom: 2px solid rgb(247, 47, 51);
+    width: 50%;
+    text-align: center;
+    padding: 15px 0 8px 0;
+}
+
+
+.select {
+	display: flex;	
+}
+
+.main-select{
+	width: 25px;
+    position: relative;
+    right: 40px;
+    top: 9px;
+}
+
+#btn_my_sell{
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 700;
+    outline: none;
+}
+#btn_my_sell::after{
+	margin-left: 10px;
+	content: "|";
+}
+#btn_login{
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 700;
+    outline: none;
+}
+#btn_login::after{
+	margin-left: 10px;
+	content: "|";
+}
+#btn_join{
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 700;
+    outline: none;
+}
+
+#btn_logout{
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 700;
+    outline: none;
+    
+}
+#btn_logout::after{
+	margin-left: 10px;
+	content: "|";
+}
+#btn_my_page{
+	background-color: Transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 15px;
+    font-weight: 700;
+    outline: none;
+}
+
+
+#main-nav{
+	width: 1000px;
+    margin: auto;
+}
+
+#menuListUl{
+	padding: 0px;
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+    margin-left: 95px;
+}
+
+#menuListul-ul{
+	display:none;
+	position:absolute;
+	top:101%;
+	background:#fff;
+	padding:0
+}
+
+#menuListLi{
+    list-style: none;
+    height: 92px;
+    overflow: hidden;
+}
+
+#menuListli-li{
+	float:none;
+	width:82px;
+	list-style: none;
+}
+#menuListli-li a{
+	color: gray;
+	display: block;
+	line-height: 32px;
+    padding: 7px 25px;
+    border: 0.5px solid gray;
+}
+
+
+#main-nav ul li:hover > ul{
+	display:block;
+}
+
+
+#menuListLi:hover{
+	cursor: pointer;
+}
+.btn_menu_img{
+	
+}
+
+.btn_menu_img:hover{
+     margin-top: -94px;
+}
+
+#sub_menu_cont{
+	width: 100px;
+	z-index: 100;
+	display: none;
+}
+
+#sub_menu_cont:hover{
+	display: flex;
+}

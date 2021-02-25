@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#main-section{
+	background-color: #FBF7F2;
+}
+#main-section2{
+	background-color: white;
+}
+#main-section3{
+	background-color: #E6F3E6;
+}
+#main-section4{
+	background-color: white;
+}
+#main-section4{
+	background-color: #F8F9FA;
+}
+
+.main-sectiondiv{
+	width: 1024px;
+	margin: auto;
+	height: 500px;
+}
+h1{
+	text-align: center;
+	font-size: 35px;
+}
+.famoush1{
+	margin: 100px 0 100px 0;
+}
+.famous-cont{
+	margin: 100px 0 100px 0;
+	height: 768px;
+	background-color: yellow;
+	display: flex;
+	flex-wrap: wrap;
+}
+.famous-box{
+	width: 256px;
+	height: 256px;
+	background-color: #E6F3E6;
+}
+
+#div{
+	height: 100px;
+}
